@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #fff7ec, #fde0b8);
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 80px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #7a5200;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+/* hover underline + color */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #7a5200;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #7a5200;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+
+
+/* CONTACT BUTTON */
+.contact-btn {
+    background: #7a5200;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background: #5c3d00;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 60px 80px;
+}
+
+/* IMAGE SIDE */
+.hero-left {
+    flex: 1;
+}
+
+.circle {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: #e8d4b2;
+    border: 3px solid #caa15a;
+}
+
+/* CONTENT SIDE */
+.hero-right {
+    flex: 1;
+}
+
+.hero-right h1 {
+    font-size: 40px;
+}
+
+.name {
+    color: #7a5200;
+    font-weight: bold;
+}
+
+.hero-right h2 {
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.role {
+    color: #7a5200;
+}
+
+.hero-right p {
+    margin: 20px 0;
+    width: 80%;
+    color: #555;
+}
+
+/* ICONS */
+.icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #7a5200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icon:hover {
+    background: #7a5200;
+    color: white;
+}
+
+/* CV BUTTON */
+.cv-btn {
+    background: #7a5200;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cv-btn:hover {
+    background: #5c3d00;
+}
